@@ -10,6 +10,7 @@ import RxSwift
 import UIKit
 
 class RepositoriesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
+    @IBOutlet var tblHeight: NSLayoutConstraint!
     @IBOutlet var numbersOfFilters: UILabel!
     @IBOutlet var tableView: UITableView!
     @IBOutlet var filterNames: UIView!
@@ -26,9 +27,10 @@ class RepositoriesViewController: UIViewController, UITableViewDelegate, UITable
     private let disposeBag = DisposeBag()
     var viewModel: RepositoriesViewModel!
 
+    @IBOutlet var filterNameView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.reloadData()
         setUpBindings()
 
         roundTop(viewName: filterNames)
@@ -44,8 +46,27 @@ class RepositoriesViewController: UIViewController, UITableViewDelegate, UITable
 
         try? applyStylingToButtons()
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        self.tableView.addObserver(self, forKeyPath: "contentSize", options: .new, context: nil)
+        
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        self.tableView.removeObserver(self, forKeyPath: "contentSize")
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "contentSize"
+        {
+                if let newvalue = change?[.newKey]{
+                    let newsize = newvalue as! CGSize
+                    self.tblHeight.constant = newsize.height
+                }
+            
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        debugPrint(self.viewModel.repositories.count)
         return self.viewModel.repositories.count
     }
 
@@ -129,6 +150,22 @@ class RepositoriesViewController: UIViewController, UITableViewDelegate, UITable
 
 }
 
+class HorizontalView: UIView {
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        
+        let topRect = CGRect(x:0, y: 0,width: rect.size.width/2 , height: rect.size.height)
+        UIColor.black.set()
+        guard let topContext = UIGraphicsGetCurrentContext() else {return}
+        topContext.fill(topRect)
+        
+        let bottomRect = CGRect(x: 0 ,y: rect.size.height/2, width: rect.size.width, height: rect.size.height/2)
+        UIColor.white.set()
+        guard let bottomContext = UIGraphicsGetCurrentContext() else {return}
+        bottomContext.fill(bottomRect)
+    }
+}
+
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
@@ -138,5 +175,13 @@ extension UIViewController {
 
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+}
+extension RepositoriesViewController {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
 }

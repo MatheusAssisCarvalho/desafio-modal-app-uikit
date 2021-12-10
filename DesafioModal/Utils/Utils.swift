@@ -25,3 +25,4 @@ func roundTop(viewName: UIView!) {
     viewName.layer.cornerRadius = 10
     viewName.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
 }
+
