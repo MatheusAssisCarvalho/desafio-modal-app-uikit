@@ -34,8 +34,8 @@
                             <rect key="frame" x="0.0" y="158" width="428" height="496"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </tableView>
-                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Hs-ok-NhA">
-                            <rect key="frame" x="8" y="42" width="412" height="56"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Hs-ok-NhA">
+                            <rect key="frame" x="8" y="42" width="412" height="140"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FILTRANDO:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KP2-4z-WxH">
                                     <rect key="frame" x="0.0" y="0.0" width="412" height="11"/>
@@ -46,47 +46,33 @@
                                     <color key="textColor" red="0.63149005170000005" green="0.65095549819999998" blue="0.6900721192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <stackView opaque="NO" contentMode="scaleToFill" alignment="firstBaseline" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lKb-Yf-KLm">
-                                    <rect key="frame" x="0.0" y="19" width="165.66666666666666" height="40"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="firstBaseline" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lKb-Yf-KLm">
+                                    <rect key="frame" x="0.0" y="19" width="412" height="40"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" springLoaded="YES" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cS2-Gh-Kmo">
-                                            <rect key="frame" x="0.0" y="0.0" width="49.333333333333336" height="40"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cS2-Gh-Kmo">
+                                            <rect key="frame" x="0.0" y="0.0" width="122.66666666666667" height="40"/>
                                             <accessibility key="accessibilityConfiguration" label="stars"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="v3Q-Af-WdW"/>
                                             </constraints>
+                                            <fontDescription key="fontDescription" name="Arial-BoldItalicMT" family="Arial" pointSize="12"/>
                                             <color key="tintColor" systemColor="labelColor"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                            <state key="normal" image="xmark" catalog="system">
-                                                <attributedString key="attributedTitle">
-                                                    <fragment content="DATA">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <font key="NSFont" size="12" name="Arial-BoldItalicMT"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
+                                            <state key="normal" title="DATA" image="xmark" catalog="system">
+                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" springLoaded="YES" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vmk-3f-cRv">
-                                            <rect key="frame" x="57.333333333333336" y="0.0" width="108.33333333333331" height="40"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vmk-3f-cRv">
+                                            <rect key="frame" x="130.66666666666666" y="0.0" width="281.33333333333337" height="40"/>
                                             <accessibility key="accessibilityConfiguration" label="updated"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="Htb-cz-541"/>
                                             </constraints>
+                                            <fontDescription key="fontDescription" name="Arial-BoldItalicMT" family="Arial" pointSize="12"/>
                                             <color key="tintColor" systemColor="labelColor"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                            <state key="normal" image="xmark" catalog="system">
-                                                <attributedString key="attributedTitle">
-                                                    <fragment content="DECRESCENTE">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <font key="NSFont" size="12" name="Arial-BoldItalicMT"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
+                                            <state key="normal" title="DECRESCENTE" image="xmark" catalog="system">
+                                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                         </button>
                                     </subviews>
@@ -96,8 +82,10 @@
                                 <constraint firstItem="KP2-4z-WxH" firstAttribute="top" secondItem="4Hs-ok-NhA" secondAttribute="top" id="KDd-gU-M0j"/>
                                 <constraint firstAttribute="trailing" secondItem="KP2-4z-WxH" secondAttribute="trailing" id="MgX-sy-U6J"/>
                                 <constraint firstItem="lKb-Yf-KLm" firstAttribute="top" secondItem="KP2-4z-WxH" secondAttribute="bottom" constant="8" id="ZYv-BT-gzP"/>
+                                <constraint firstAttribute="trailing" secondItem="lKb-Yf-KLm" secondAttribute="trailing" id="jI5-Oz-HXN"/>
                                 <constraint firstItem="lKb-Yf-KLm" firstAttribute="leading" secondItem="4Hs-ok-NhA" secondAttribute="leading" id="mB1-yN-p0I"/>
                                 <constraint firstItem="KP2-4z-WxH" firstAttribute="leading" secondItem="4Hs-ok-NhA" secondAttribute="leading" id="nG2-qf-IGG"/>
+                                <constraint firstItem="lKb-Yf-KLm" firstAttribute="leading" secondItem="4Hs-ok-NhA" secondAttribute="leading" id="q2e-vN-hpW"/>
                             </constraints>
                         </view>
                     </subviews>

@@ -74,9 +74,19 @@ class RepositoriesViewController: UIViewController, UITableViewDelegate, UITable
     private func applyStylingToButtons() throws {
         let buttons: [UIButton] = [filterSortButton, filterOrderButton]
 
+        let labels = ["stars": "ESTRELAS", "forks": "SEGUIDORES", "updated": "DATA", "none": "", "asc": "CRESCENTE", "desc": "DECRESCENTE"]
+
+        filterSortButton.isHidden = viewModel.filterService.sorting == nil
+
+        filterSortButton.setTitle(labels[viewModel.filterService.sorting?.rawValue ?? "none"], for: .normal)
+        filterOrderButton.setTitle(labels[viewModel.filterService.order.rawValue], for: .normal)
+
         for button in buttons {
             button.backgroundColor = .white
             button.setTitleColor(.black, for: .normal)
+
+            button.contentHorizontalAlignment = UIControl.ContentHorizontalAlignment.center
+            button.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
 
             let xMark = UIImage.init(systemName: "xmark", withConfiguration: UIImage.SymbolConfiguration(weight: .light))
 
@@ -118,6 +128,10 @@ class RepositoriesViewController: UIViewController, UITableViewDelegate, UITable
 
         clearFiltersButton.rx.tap
             .bind { [weak self] in self?.viewModel.clearFilters() }
+            .disposed(by: disposeBag)
+
+        viewModel.didViewUpdated
+            .subscribe(onNext: {[weak self] in try? self?.applyStylingToButtons()})
             .disposed(by: disposeBag)
     }
 
