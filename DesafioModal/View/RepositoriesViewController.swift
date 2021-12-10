@@ -51,18 +51,10 @@ class RepositoriesViewController: UIViewController, UITableViewDelegate, UITable
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "RepositoryCell", for: indexPath) as? RepositoryTableViewCell {
-
             cell.setData(repository: self.viewModel.repositories[indexPath.row])
-
-            if !indexPath.row.isMultiple(of: 2) {
-                cell.invertTheme()
-            } else {
-                cell.mainTheme()
-            }
-
+            indexPath.row.isMultiple(of: 2) ? cell.mainTheme() : cell.invertTheme()
             return cell
         }
-
         return UITableViewCell()
     }
 
