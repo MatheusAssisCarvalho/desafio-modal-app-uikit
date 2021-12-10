@@ -20,6 +20,9 @@ class RepositoriesViewController: UIViewController, UITableViewDelegate, UITable
 
     @IBOutlet var clearFiltersButton: UIButton!
 
+    @IBOutlet var filterSortButton: UIButton!
+    @IBOutlet var filterOrderButton: UIButton!
+
     private let disposeBag = DisposeBag()
     var viewModel: RepositoriesViewModel!
 
@@ -38,6 +41,8 @@ class RepositoriesViewController: UIViewController, UITableViewDelegate, UITable
         self.hideKeyboardWhenTappedAround()
 
         tableView.register(UINib(nibName: "RepositoryTableViewCell", bundle: nil), forCellReuseIdentifier: "RepositoryCell")
+
+        try? applyStylingToButtons()
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -64,6 +69,29 @@ class RepositoriesViewController: UIViewController, UITableViewDelegate, UITable
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let repository = self.viewModel.repositories[indexPath.row]
         self.viewModel.showDetailsOfRepository(repository)
+    }
+
+    private func applyStylingToButtons() throws {
+        let buttons: [UIButton] = [filterSortButton, filterOrderButton]
+
+        for button in buttons {
+            button.backgroundColor = .white
+            button.setTitleColor(.black, for: .normal)
+
+            let xMark = UIImage.init(systemName: "xmark", withConfiguration: UIImage.SymbolConfiguration(weight: .light))
+
+            button.setImage(xMark, for: .normal)
+            button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 8.45, bottom: 0, right: 0)
+
+            button.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
+            button.titleLabel?.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
+            button.imageView?.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
+
+            button.layer.borderColor = UIColor.black.cgColor
+            button.layer.borderWidth = 1.0
+            button.layer.cornerRadius = 4.0
+
+        }
     }
 
     private func setUpBindings() {
