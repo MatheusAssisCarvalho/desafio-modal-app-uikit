@@ -62,10 +62,19 @@ class FilterViewController: UIViewController {
     }
 
     private func applyStylingToButtons() throws {
-        let buttons: [UIButton] = [starsFilterButton, followersFilterButton, dateFilterButton, ascendingOrderButton, descendingOrderButton]
+        let buttons: [UIButton] = [
+            starsFilterButton, followersFilterButton, dateFilterButton,
+            ascendingOrderButton, descendingOrderButton
+        ]
 
         let sorting = try viewModel.sorting.value()
         let order = try viewModel.order.value()
+
+        applyFilterButton.backgroundColor = .black
+        applyFilterButton.setTitleColor(.white, for: .normal)
+        applyFilterButton.layer.borderColor = UIColor.black.cgColor
+        applyFilterButton.layer.borderWidth = 1.0
+        applyFilterButton.layer.cornerRadius = 4.0
 
         for button in buttons {
             if button.accessibilityLabel == order.rawValue || button.accessibilityLabel == sorting?.rawValue {
