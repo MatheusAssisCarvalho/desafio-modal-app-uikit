@@ -12,6 +12,7 @@
 		4E5AE65727613F36008F6763 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5AE65627613F36008F6763 /* Utils.swift */; };
 		4E5AE65A27624F17008F6763 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5AE65827624F17008F6763 /* DetailViewController.swift */; };
 		4E5AE65B27624F17008F6763 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E5AE65927624F17008F6763 /* DetailViewController.xib */; };
+		80C28E212767BB4400DEB918 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80C28E202767BB4400DEB918 /* Montserrat-SemiBold.ttf */; };
 		80F85C69275E55ED00F0FB95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F85C68275E55ED00F0FB95 /* AppDelegate.swift */; };
 		80F85C72275E55EE00F0FB95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80F85C71275E55EE00F0FB95 /* Assets.xcassets */; };
 		80F85C75275E55EE00F0FB95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F85C73275E55EE00F0FB95 /* LaunchScreen.storyboard */; };
@@ -65,6 +66,7 @@
 		4E5AE65627613F36008F6763 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		4E5AE65827624F17008F6763 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4E5AE65927624F17008F6763 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		80C28E202767BB4400DEB918 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		80F85C65275E55ED00F0FB95 /* DesafioModal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioModal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F85C68275E55ED00F0FB95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80F85C71275E55EE00F0FB95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -134,6 +136,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		80C28E1F2767BAC200DEB918 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				80C28E202767BB4400DEB918 /* Montserrat-SemiBold.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		80F85C5C275E55ED00F0FB95 = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +167,7 @@
 		80F85C67275E55ED00F0FB95 /* DesafioModal */ = {
 			isa = PBXGroup;
 			children = (
+				80C28E1F2767BAC200DEB918 /* fonts */,
 				4E5AE65527613F21008F6763 /* Utils */,
 				80F85CD6275FA42500F0FB95 /* Service */,
 				EB5F6D3D275E853E007D1FBF /* Model */,
@@ -363,6 +374,7 @@
 				80F85CE3275FD38D00F0FB95 /* RepositoryTableViewCell.xib in Resources */,
 				80F85C75275E55EE00F0FB95 /* LaunchScreen.storyboard in Resources */,
 				4E5AE65B27624F17008F6763 /* DetailViewController.xib in Resources */,
+				80C28E212767BB4400DEB918 /* Montserrat-SemiBold.ttf in Resources */,
 				4E5AE6542760F11A008F6763 /* RepositoriesViewController.xib in Resources */,
 				C166A129276128D40059D459 /* FilterViewController.xib in Resources */,
 				80F85C72275E55EE00F0FB95 /* Assets.xcassets in Resources */,
