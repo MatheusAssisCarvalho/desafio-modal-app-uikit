@@ -7,6 +7,14 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Arial-Narrow-Italic.ttf">
+            <string>ArialNarrow-Italic</string>
+        </array>
+        <array key="Arial-Narrow-Regular.ttf">
+            <string>ArialNarrow</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RepositoriesViewController" customModule="DesafioModal" customModuleProvider="target">
             <connections>
@@ -28,14 +36,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDq-sd-Ldh" userLabel="LISTAGEM">
-                    <rect key="frame" x="0.0" y="206" width="428" height="654"/>
+                    <rect key="frame" x="0.0" y="205.99999999999994" width="428" height="670.66666666666652"/>
                     <subviews>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fPR-mC-uzp">
-                            <rect key="frame" x="0.0" y="158" width="428" height="496"/>
+                            <rect key="frame" x="0.0" y="114" width="428" height="556.66666666666663"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </tableView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Hs-ok-NhA">
-                            <rect key="frame" x="8" y="42" width="412" height="140"/>
+                            <rect key="frame" x="8" y="41.66666666666665" width="412" height="96.333333333333314"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FILTRANDO:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KP2-4z-WxH">
                                     <rect key="frame" x="0.0" y="0.0" width="412" height="11"/>
@@ -47,15 +55,15 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="firstBaseline" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lKb-Yf-KLm">
-                                    <rect key="frame" x="0.0" y="19" width="412" height="40"/>
+                                    <rect key="frame" x="0.0" y="19.000000000000028" width="412" height="40"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cS2-Gh-Kmo">
-                                            <rect key="frame" x="0.0" y="0.0" width="122.66666666666667" height="40"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="125.66666666666667" height="40"/>
                                             <accessibility key="accessibilityConfiguration" label="stars"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="v3Q-Af-WdW"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="Arial-BoldItalicMT" family="Arial" pointSize="12"/>
+                                            <fontDescription key="fontDescription" name="ArialNarrow-Italic" family="Arial Narrow" pointSize="10"/>
                                             <color key="tintColor" systemColor="labelColor"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" title="DATA" image="xmark" catalog="system">
@@ -63,12 +71,12 @@
                                             </state>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vmk-3f-cRv">
-                                            <rect key="frame" x="130.66666666666666" y="0.0" width="281.33333333333337" height="40"/>
+                                            <rect key="frame" x="133.66666666666666" y="0.0" width="278.33333333333337" height="40"/>
                                             <accessibility key="accessibilityConfiguration" label="updated"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="Htb-cz-541"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="Arial-BoldItalicMT" family="Arial" pointSize="12"/>
+                                            <fontDescription key="fontDescription" name="ArialNarrow-Italic" family="Arial Narrow" pointSize="10"/>
                                             <color key="tintColor" systemColor="labelColor"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" title="DECRESCENTE" image="xmark" catalog="system">
@@ -94,7 +102,7 @@
                         <constraint firstAttribute="trailing" secondItem="fPR-mC-uzp" secondAttribute="trailing" id="562-N2-Ul6"/>
                         <constraint firstItem="fPR-mC-uzp" firstAttribute="leading" secondItem="bDq-sd-Ldh" secondAttribute="leading" id="9F6-Ud-fcj"/>
                         <constraint firstItem="fPR-mC-uzp" firstAttribute="top" secondItem="4Hs-ok-NhA" secondAttribute="bottom" constant="-24" id="9t5-fF-qUu"/>
-                        <constraint firstItem="fPR-mC-uzp" firstAttribute="top" secondItem="bDq-sd-Ldh" secondAttribute="top" constant="158" id="Q3g-vi-MWJ"/>
+                        <constraint firstItem="fPR-mC-uzp" firstAttribute="top" secondItem="bDq-sd-Ldh" secondAttribute="top" constant="114" id="Q3g-vi-MWJ"/>
                         <constraint firstAttribute="trailing" secondItem="4Hs-ok-NhA" secondAttribute="trailing" constant="8" id="ZbX-v9-leD"/>
                         <constraint firstItem="4Hs-ok-NhA" firstAttribute="leading" secondItem="bDq-sd-Ldh" secondAttribute="leading" constant="8" id="kJS-3d-kjV"/>
                         <constraint firstAttribute="bottom" secondItem="fPR-mC-uzp" secondAttribute="bottom" id="zkb-wo-lgt"/>
@@ -105,7 +113,7 @@
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GitHub" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPp-ld-GYb">
                             <rect key="frame" x="57" y="0.0" width="269" height="20"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" name="ArialNarrow" family="Arial Narrow" pointSize="14"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -125,7 +133,7 @@
                             <state key="normal" backgroundImage="386f10269bef49970fadf847d6076753-1"/>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKo-xo-d8i">
-                            <rect key="frame" x="362" y="4" width="16" height="16"/>
+                            <rect key="frame" x="362" y="4" width="16" height="16.666666666666668"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="16" id="5f3-6q-12E"/>
@@ -154,17 +162,17 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aUr-sF-2WU" userLabel="FILTRAR NOMES">
-                    <rect key="frame" x="64" y="176" width="300" height="56"/>
+                    <rect key="frame" x="64" y="176" width="300" height="55.666666666666657"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="FILTRAR POR NOME?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFb-jY-pHV">
-                            <rect key="frame" x="12" y="8" width="102.66666666666667" height="12"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                            <nil key="textColor"/>
+                            <rect key="frame" x="12" y="7.9999999999999991" width="85.333333333333329" height="11.666666666666664"/>
+                            <fontDescription key="fontDescription" name="ArialNarrow" family="Arial Narrow" pointSize="10"/>
+                            <color key="textColor" red="0.16470588235294117" green="0.1803921568627451" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Orc-vW-OdR">
-                            <rect key="frame" x="12" y="23" width="273" height="33"/>
-                            <color key="backgroundColor" red="0.50196078430000002" green="0.87450980389999999" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <rect key="frame" x="12" y="22.666666666666657" width="273" height="33"/>
+                            <color key="backgroundColor" red="0.39215686274509803" green="1" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="33" id="i6E-kC-9cX"/>
                             </constraints>
@@ -173,7 +181,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                     </subviews>
-                    <color key="backgroundColor" red="0.50196078431372548" green="0.87450980392156863" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.39215686274509803" green="1" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="Orc-vW-OdR" firstAttribute="top" secondItem="OFb-jY-pHV" secondAttribute="bottom" constant="3" id="0PM-W1-1o1"/>
                         <constraint firstItem="OFb-jY-pHV" firstAttribute="leading" secondItem="aUr-sF-2WU" secondAttribute="leading" constant="12" id="1cG-2Y-obX"/>
@@ -184,25 +192,26 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7a-LB-tff">
-                    <rect key="frame" x="0.0" y="860" width="428" height="40"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <state key="normal" title="LIMPAR FILTROS" image="image-1">
-                        <color key="titleColor" red="0.50196078430000002" green="0.87450980389999999" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <rect key="frame" x="0.0" y="884.66666666666663" width="428" height="16.333333333333371"/>
+                    <fontDescription key="fontDescription" name="ArialNarrow-Italic" family="Arial Narrow" pointSize="10"/>
+                    <color key="tintColor" red="0.39215686274509803" green="1" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="LIMPAR FILTROS" image="xmark" catalog="system">
+                        <color key="titleColor" red="0.39215686274509803" green="1" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="oeQ-ZK-Y4e"/>
             <color key="backgroundColor" systemColor="labelColor"/>
             <constraints>
-                <constraint firstItem="R7a-LB-tff" firstAttribute="bottom" secondItem="oeQ-ZK-Y4e" secondAttribute="bottom" constant="8" id="EY3-bw-lK9"/>
+                <constraint firstItem="R7a-LB-tff" firstAttribute="top" secondItem="bDq-sd-Ldh" secondAttribute="bottom" constant="8" id="2nW-tx-KvE"/>
                 <constraint firstItem="oeQ-ZK-Y4e" firstAttribute="trailing" secondItem="JSF-bo-xgW" secondAttribute="trailing" id="JAh-hQ-8Jd"/>
                 <constraint firstItem="R7a-LB-tff" firstAttribute="leading" secondItem="oeQ-ZK-Y4e" secondAttribute="leading" id="KmU-Ar-xL6"/>
                 <constraint firstItem="JSF-bo-xgW" firstAttribute="leading" secondItem="oeQ-ZK-Y4e" secondAttribute="leading" id="MSw-nj-Jcm"/>
                 <constraint firstItem="oeQ-ZK-Y4e" firstAttribute="trailing" secondItem="aUr-sF-2WU" secondAttribute="trailing" constant="64" id="Xua-vh-QEi"/>
                 <constraint firstItem="aUr-sF-2WU" firstAttribute="top" secondItem="JSF-bo-xgW" secondAttribute="bottom" constant="24" id="bSA-C9-q9j"/>
                 <constraint firstItem="aUr-sF-2WU" firstAttribute="leading" secondItem="oeQ-ZK-Y4e" secondAttribute="leading" constant="64" id="e8b-UW-oLr"/>
-                <constraint firstItem="R7a-LB-tff" firstAttribute="top" secondItem="bDq-sd-Ldh" secondAttribute="bottom" id="eWd-ej-ffN"/>
                 <constraint firstItem="bDq-sd-Ldh" firstAttribute="trailing" secondItem="R7a-LB-tff" secondAttribute="trailing" id="hY3-vE-pYx"/>
+                <constraint firstAttribute="bottom" secondItem="R7a-LB-tff" secondAttribute="bottom" constant="25" id="hpM-Up-tFd"/>
                 <constraint firstItem="bDq-sd-Ldh" firstAttribute="leading" secondItem="R7a-LB-tff" secondAttribute="leading" id="ohc-Ps-B5F"/>
                 <constraint firstItem="JSF-bo-xgW" firstAttribute="top" secondItem="oeQ-ZK-Y4e" secondAttribute="top" constant="54" id="p1L-uM-r5P"/>
                 <constraint firstItem="bDq-sd-Ldh" firstAttribute="top" secondItem="JSF-bo-xgW" secondAttribute="bottom" constant="54" id="uVU-V9-Q2M"/>
@@ -215,7 +224,6 @@
     <resources>
         <image name="386f10269bef49970fadf847d6076753-1" width="18.666666030883789" height="18.666666030883789"/>
         <image name="d18121d326c730953a902bdf511667a3-1" width="18.666666030883789" height="18.666666030883789"/>
-        <image name="image-1" width="40" height="40"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
