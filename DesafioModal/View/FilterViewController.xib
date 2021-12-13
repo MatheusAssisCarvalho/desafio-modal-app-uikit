@@ -42,7 +42,7 @@
                     <state key="normal" image="xmark" catalog="system"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHY-aY-3KH">
-                    <rect key="frame" x="57" y="44" width="36" height="56"/>
+                    <rect key="frame" x="57" y="44" width="44" height="56"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="56" id="J0o-uK-Sxl"/>
                     </constraints>
@@ -53,7 +53,7 @@
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98o-qh-am8">
-                    <rect key="frame" x="330" y="44" width="44" height="56"/>
+                    <rect key="frame" x="322" y="44" width="52" height="56"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="56" id="uvy-Ey-eWc"/>
                     </constraints>
@@ -82,16 +82,16 @@
                             <rect key="frame" x="0.0" y="35" width="390" height="108"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FILTROS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jhl-ZU-cJr">
-                                    <rect key="frame" x="15.999999999999996" y="0.0" width="39.666666666666657" height="11.666666666666666"/>
+                                    <rect key="frame" x="16" y="0.0" width="43" height="12.333333333333334"/>
                                     <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="10"/>
                                     <color key="textColor" red="0.63137254901960782" green="0.65098039215686276" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="ij7-4e-ZBb">
-                                    <rect key="frame" x="16" y="40.666666666666657" width="358" height="40"/>
+                                    <rect key="frame" x="16" y="41.333333333333343" width="358" height="40"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eu-r9-Mb1">
-                                            <rect key="frame" x="0.0" y="0.0" width="110" height="40"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="109" height="40"/>
                                             <accessibility key="accessibilityConfiguration" label="stars"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="GRg-5b-6MV"/>
@@ -104,7 +104,7 @@
                                             </state>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmh-7l-MtP">
-                                            <rect key="frame" x="123.99999999999999" y="0.0" width="141.66666666666663" height="40"/>
+                                            <rect key="frame" x="122.99999999999999" y="0.0" width="141.66666666666663" height="40"/>
                                             <accessibility key="accessibilityConfiguration" label="forks"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="pLO-Ua-8BK"/>
@@ -117,9 +117,10 @@
                                             </state>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfe-E4-dUc">
-                                            <rect key="frame" x="279.66666666666669" y="0.0" width="78.333333333333314" height="40"/>
+                                            <rect key="frame" x="278.66666666666669" y="0.0" width="79.333333333333314" height="40"/>
                                             <accessibility key="accessibilityConfiguration" label="updated"/>
                                             <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="79" id="XIC-MO-5G9"/>
                                                 <constraint firstAttribute="height" constant="40" id="obv-bZ-9fe"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="12"/>
@@ -132,7 +133,7 @@
                                     </subviews>
                                 </stackView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujd-bh-hPq">
-                                    <rect key="frame" x="0.0" y="119.66666666666669" width="390" height="1"/>
+                                    <rect key="frame" x="0.0" y="120.33333333333331" width="390" height="1"/>
                                     <color key="backgroundColor" red="0.85098039215686272" green="0.85882352941176465" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="M6X-pc-pTO"/>
@@ -155,13 +156,13 @@
                             <rect key="frame" x="0.0" y="169" width="390" height="108"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ORDEM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r47-n0-Zc7">
-                                    <rect key="frame" x="16.000000000000004" y="0.0" width="36.333333333333343" height="11.666666666666666"/>
+                                    <rect key="frame" x="16.000000000000004" y="0.0" width="40.333333333333343" height="12.333333333333334"/>
                                     <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="10"/>
                                     <color key="textColor" red="0.63137254899999995" green="0.65098039220000004" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Wkn-68-bBK">
-                                    <rect key="frame" x="16" y="40.666666666666686" width="358" height="40"/>
+                                    <rect key="frame" x="16" y="41.333333333333314" width="358" height="40"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hod-FB-5ml">
                                             <rect key="frame" x="0.0" y="0.0" width="147.66666666666666" height="40"/>
