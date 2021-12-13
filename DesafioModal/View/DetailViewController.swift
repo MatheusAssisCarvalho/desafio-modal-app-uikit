@@ -40,6 +40,9 @@ class DetailViewController: UIViewController {
         view.backgroundColor = UIColor(red: 235 / 255, green: 236 / 255, blue: 238 / 255, alpha: 1.0)
         roundTop(viewName: repoView)
 
+        shareButton.layer.borderColor = UIColor.black.cgColor
+        shareButton.layer.borderWidth = 1.0
+        shareButton.layer.cornerRadius = 4.0
     }
 
     private func setUpBindings() {
