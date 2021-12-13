@@ -8,6 +8,17 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Arial-Narrow-Bold.ttf">
+            <string>ArialNarrow-Bold</string>
+        </array>
+        <array key="Arial-Narrow-Regular.ttf">
+            <string>ArialNarrow</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="DesafioModal" customModuleProvider="target">
             <connections>
@@ -38,6 +49,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="54" id="fGV-yw-npP"/>
                             </constraints>
+                            <fontDescription key="fontDescription" name="ArialNarrow" family="Arial Narrow" pointSize="14"/>
                             <state key="normal" title="    Detalhe">
                                 <imageReference key="image" image="arrow.backward-1" symbolScale="large"/>
                             </state>
@@ -64,7 +76,7 @@
                                 <constraint firstAttribute="width" constant="163" id="vA8-pV-5hL"/>
                                 <constraint firstAttribute="height" constant="32" id="yl9-vO-cbi"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" name="ArialNarrow-Bold" family="Arial Narrow" pointSize="12"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -72,12 +84,12 @@
                             <rect key="frame" x="302" y="71" width="72" height="32"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total de estrelas" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="az7-V5-wh1">
-                                    <rect key="frame" x="0.0" y="0.0" width="70" height="14"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="74" height="14"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="14" id="fRG-Cg-wht"/>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="wdV-Ax-m8Y"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="10"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
                                     <color key="textColor" red="0.5607843137254902" green="0.58431372549019611" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -87,7 +99,7 @@
                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="byM-vg-J8y"/>
                                         <constraint firstAttribute="width" constant="72" id="eWV-mh-hiA"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
+                                    <fontDescription key="fontDescription" name="ArialNarrow-Bold" family="Arial Narrow" pointSize="14"/>
                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -118,7 +130,7 @@
                                         <constraint firstAttribute="height" constant="16" id="LBp-En-VLO"/>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="qzh-le-siF"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="10"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
                                     <color key="textColor" red="0.5607843137254902" green="0.58431372549019611" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -128,7 +140,7 @@
                                         <constraint firstAttribute="width" constant="76" id="Qhk-Z0-7sG"/>
                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="mfx-8o-gtg"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
+                                    <fontDescription key="fontDescription" name="ArialNarrow-Bold" family="Arial Narrow" pointSize="14"/>
                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -153,7 +165,7 @@
                                         <constraint firstAttribute="height" constant="16" id="a9S-DG-hNH"/>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="mMt-bj-haJ"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="10"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
                                     <color key="textColor" red="0.56078431370000004" green="0.58431372550000005" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -163,7 +175,7 @@
                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="1z1-sR-ulN"/>
                                         <constraint firstAttribute="width" constant="76" id="Ihk-Xc-Jnh"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
+                                    <fontDescription key="fontDescription" name="ArialNarrow-Bold" family="Arial Narrow" pointSize="14"/>
                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -195,7 +207,7 @@
                                         <constraint firstAttribute="height" constant="16" id="Zae-i3-m59"/>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="krY-jj-ikr"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="10"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
                                     <color key="textColor" red="0.56078431370000004" green="0.58431372550000005" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -205,7 +217,7 @@
                                         <constraint firstAttribute="width" constant="76" id="Ddd-q1-kTD"/>
                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="d0L-TM-mTk"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
+                                    <fontDescription key="fontDescription" name="ArialNarrow-Bold" family="Arial Narrow" pointSize="14"/>
                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -225,12 +237,12 @@
                             <rect key="frame" x="180" y="191" width="76" height="32"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Colaboradores" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1C-P1-yHB">
-                                    <rect key="frame" x="0.0" y="0.0" width="60.5" height="16"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="65.5" height="16"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="16" id="rMy-Mm-x3c"/>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="u9W-A3-Ayh"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="10"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
                                     <color key="textColor" red="0.56078431370000004" green="0.58431372550000005" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -240,7 +252,7 @@
                                         <constraint firstAttribute="width" constant="76" id="Ct5-kF-2F5"/>
                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="KQN-JS-jBh"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
+                                    <fontDescription key="fontDescription" name="ArialNarrow-Bold" family="Arial Narrow" pointSize="14"/>
                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
