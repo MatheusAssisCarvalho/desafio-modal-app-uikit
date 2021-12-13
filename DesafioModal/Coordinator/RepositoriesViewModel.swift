@@ -9,6 +9,7 @@ class RepositoriesViewModel {
     let filterService: FilterService
 
     let searchQuery = BehaviorSubject(value: "")
+    var lastSearchQuery: String?
     var repositories: [Repository] = []
     var page = 1
 
@@ -40,12 +41,23 @@ class RepositoriesViewModel {
             query = "language:swift"
         }
 
+        var newQuery = false
+
+        if lastSearchQuery == nil || lastSearchQuery != query {
+            lastSearchQuery = query
+            newQuery = true
+        }
+
         fetching = true
 
         githubService.searchRepositories(query: query, sorting: FilterService.shared.sorting, order: FilterService.shared.order, page: page) { [weak self] result in
             switch result {
             case .success(let response):
-                self?.repositories += response.repositories
+                if newQuery {
+                    self?.repositories = response.repositories
+                } else {
+                    self?.repositories += response.repositories
+                }
                 self?.didSearchEnded.onNext(())
 
             default:
